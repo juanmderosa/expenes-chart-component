@@ -10,8 +10,8 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/juanmderosa/expenses-chart-component)
-- Live Site URL: [Add live site URL here](https://juanmderosa.github.io/expenses-chart-component/)
+- Solution URL: [https://github.com/juanmderosa/expenses-chart-component]
+- Live Site URL: [https://juanmderosa.github.io/expenses-chart-component]
 
 ### Built with
 
