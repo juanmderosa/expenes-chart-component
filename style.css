@@ -1,0 +1,226 @@
+/* Normalize */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    font-weight: 400;
+}
+html, body {
+    height: 100%;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* Variables */
+
+:root{
+    /* Primary */
+    --Softred: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    /* Neutral */
+    --Darkbrown: hsl(25, 47%, 15%);
+    --Mediumbrown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Verypaleorange: hsl(33, 100%, 98%);
+}
+
+*{
+    font-family: 'DM Sans', sans-serif;;
+}
+
+/* Styles */
+
+body{
+    background-color: var(--Cream);
+}
+
+.mainContainer{
+    width: 100%;
+    height: 100vh;
+    padding: 15% 5% 15% 5%;
+}
+
+.myBalanceSection{
+    border-radius: 10px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--Softred);
+    color: var(--Verypaleorange);
+}
+
+.myBalanceTitle{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.myBalanceAmount{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.circlesContainer{
+    display: flex;
+}
+.circleTransparent{
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--Cream);
+    border-radius: 50%;
+    position: relative;
+    left: 20%;
+}
+.circleBlack{
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--Darkbrown);
+    background-color: var(--Darkbrown);
+    border-radius: 50%;
+}
+
+.sectionGraph{
+    margin-top: 5%;
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--Verypaleorange);
+}
+
+.sectionGraphTitle{
+    text-align: left;
+    font-weight: 700;
+    color: var(--Darkbrown);
+    margin-bottom: 20px;
+}
+
+.infoGraphContainer{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--Cream);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.infoGraph{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.amount{
+    background-color: var(--Softred);
+    width: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.graphDay{
+    font-size: .7rem;
+    color: var(--Mediumbrown);
+    font-weight: 400
+}
+
+.totalContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.totalMonthTitle{
+    color: var(--Mediumbrown);
+    font-weight: 400;
+}
+.totalMonthAmount{
+    color: var(--Darkbrown);
+    font-weight: 700;
+    font-size: 2rem;
+}
+.differencecontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.totalAmount{
+    color: var(--Darkbrown);
+    font-weight: 700;
+}
+.totalTitle{
+    color: var(--Mediumbrown);
+    font-weight: 400;
+}
+
+.hoverDiv{
+    background-color: var(--Darkbrown);
+    width: 2.5rem;
+    height: 1.5rem;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    top: -30px; left: -5px
+}
+.hoverP{
+    text-align: center;
+    font-size: .6rem;
+    color: var(--Cream);
+    font-weight: 400
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Media Queries */
+
+@media screen and (min-width: 460px){
+    .mainContainer{
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+    }
+    
+    .myBalanceSection{
+        max-width: 440px;
+    }
+    
+    .sectionGraph{
+        max-width: 440px;
+        margin-top: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    
+}
